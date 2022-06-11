@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="icon" href="images/Group 1 (1).png">
+    <link rel="stylesheet" href="login-sub.css">
+    <link rel="stylesheet" href="reponsiveLog-sub.css">
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="login-sub">
+        <div class="login-sub-box">
+            <div class="login-sub-box-1">
+                <ul class="list-login-sub">
+                    <div class="btn-home"> <a class="btn-home" href="index.html"><img src="images/Group 1 (1).png" width="50px" class="hinhlogo" alt=""></a></div>
+                    <li class="title-list"><h5>Đăng ký</h5></li>
+
+                    <li class="taoTK">
+                        <input type="text" name="" id="soDienThoai" placeholder="Số điện thoại">
+                    </li>
+                    <div id="baoloi"></div>
+                    <div class="chia-khung">
+                        <li class="sub-mk">
+                            <input class="sub-mk-1"  type="text" id="matKhau" placeholder="Mật khẩu">
+                            <div id="baoloi1"></div>
+                            <input class="sub-mk-1" type="text" id="returnMK" placeholder="Nhập lại mật khẩu">
+                            <div id="baoloi2"></div>
+                        </li>
+                        <li class="sub-mk-box-1">
+                            <input class="sub-mk-2" type="radio" name="rdGioiTinh"><span id="to-mau" >Nam</span><br>
+                            <input class="sub-mk-2" type="radio" name="rdGioiTinh"><span id="to-mau1">Nữ</span>
+                            <div id="baoloi3"></div>
+                        </li>
+                    </div>
+                    <li class="sub-ns">
+                        <span style="color: aliceblue;">Ngày sinh:</span>
+                        <input type="date">
+                    </li>
+                    <div id="baoloi4"></div>
+                    <li class="sub-button-dk">
+                        <input  class="nut-dk" type="button" value="Đăng ký" onclick="kiemTraLoiPC()">
+                    </li>
+                    <li class="conten-sub">
+                        <span>Bằng việc đăng ký, bạn đã đồng ý với DNT về <brđ>
+                            Điều khoản dịch vụ & Chích sách bảo mật
+                        </span>
+                    </li>
+                    <li class="conten-dn">
+                        Bạn đã có tài khoản?
+                        <a href="login.html"> Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-tablet mobile">
+        <form>
+            <div class="dangnhap-tablet">
+                <div class="case1">
+                    <div class="case1-left">
+                        <span>
+                            <a href="index.html"> <i class="ti-arrow-left"></i></a>
+                        </span>
+                        <span>Đăng ký</span>
+                    </div>
+                    <div class="case1-right">
+                        <a href="#">
+                            <p>Cần trợ giúp ?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="case2">
+                    <img src="images/Group 1 (1).png" alt="">
+                </div>
+                <div class="case3">
+                    <div class="nhap-tk">
+                        <i class="ti-user"></i>
+                        <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập"  id="soDienThoaiMB"><br>
+                        <div id="errormb"></div>
+                    </div>
+                    <div class="nhapMK">
+                        <i class="ti-lock"></i>
+                        <input type="password" placeholder="Mật khẩu" id="matKhauMB">
+                        <div id="errormb1"></div>
+                    </div>
+                    <div class="nhapMK">
+                        <i class="ti-lock"></i>
+                        <input type="password" placeholder="Nhập lại mật khẩu" id="returnMKMB">
+                        <div id="errormb2"></div>
+                    </div>
+                    <div class="case3-left">
+                        <label>Ngày sinh: </label>
+                    <input type="date" class="ngay-sinh" placeholder="Ngày sinh">
+                    </div>
+                    <div class="case3-right">
+                        <input class="gTinh"  type="radio" name="rdGioiTinh" >Nam
+                        <input class="gTinh"  type="radio" name="rdGioiTinh" >Nữ
+                        <div id="errormb3"></div>
+                    </div>
+                    <input class="submit" type="button" value="Đăng ký" onclick="kiemTraLoiTabletvaMobile()"></input>
+                </div>
+                <div class="case4">
+                    <div class="case4-left">
+                        <a href="login.html">
+                            <p>Đăng Nhập</p>
+                        </a>
+                    </div>
+                    <div class="case4-right">
+                        <a href="#">
+                            <p>Đăng ký bằng SMS</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="case5">
+                    <div class="box-title">
+                        <span>hoặc</span>
+                    </div>
+                </div>
+                <div class="case6">
+                    <div class="facebook">
+                       <div class="icon-facebook"><i class="ti-facebook"></i></div>
+                       <div class="title-facebook"><p>Facebook</p></div>
+                    </div>
+                    <div class="google">
+                        <div class="icon-google"><i class="ti-google"></i></div>
+                        <div class="title-google"><p>Google</p></div>
+                    </div>
+                    <div class="twitter">
+                        <div class="icon-twitter"><i class="ti-twitter"></i></div>
+                        <div class="title-twitter"><p>Google</p></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+         function kiemTraLoiPC() {
+            var loi = ""
+            var ok = ""
+            //Kiểm tra masv
+            var soDienThoai = document.getElementById("soDienThoai")
+            if (soDienThoai.value == "") {
+                soDienThoai.className = "loi"
+                loi += "Số điện thoại còn trống.<br>"
+                document.getElementById("baoloi").innerHTML = loi
+            } else if (soDienThoai.value.length < 10) {
+                soDienThoai.className = "loi"
+                loi += "Số điện thoại không hợp lệ.<br>"
+                document.getElementById("baoloi").innerHTML = loi
+            } else {
+                soDienThoai.className = "box0"
+                document.getElementById('baoloi').style.display = "none";
+            }
+            var loi1 = ""
+            var matKhau = document.getElementById('matKhau')
+            if(matKhau.value == ''){
+                
+                loi1 += "Bạn chưa nhập mật khẩu.<br>"
+                document.getElementById('baoloi1').innerHTML = loi1
+            }else if(matKhau.value.length < 7){
+               
+                loi1 += "Mật khẩu không được ít hơn 7 kí tự"
+                document.getElementById('baoloi1').innerHTML = loi1
+            }else{
+                matKhau.className = "box0"
+                document.getElementById('baoloi1').style.display = "none"
+            }
+            var loi2 = ""
+            var returnMK = document.getElementById('returnMK')
+            if(returnMK.value == ''){
+              
+                loi2 += "Vui lòng nhập lại mật khẩu.<br>"
+                document.getElementById('baoloi2').innerHTML = loi2
+            }else if(matKhau.value.length < 7){
+               
+                loi2+= "Mật khẩu không được ít hơn 7 kí tự"
+                document.getElementById('baoloi2').innerHTML = loi2
+            }else{
+                returnMK.className = "box0"
+                document.getElementById('baoloi2').style.display = "none"
+            }
+            var loi3 = ""
+            count = 0
+            var arr_rName = document.getElementsByName("rdGioiTinh")
+            for (var i = 0; i < arr_rName.length; i++) {
+                if (arr_rName[i].checked == true) {
+                    count++
+                }
+            }
+            if (count == 0) {
+                document.getElementById('to-mau').style.color = 'red'
+                document.getElementById('to-mau1').style.color = 'red'
+                document.getElementById('baoloi3').innerHTML = 'Chon giới tính'
+            } else {
+                arr_rName.className = "none"
+                document.getElementById('to-mau').style.color = 'white'
+                document.getElementById('to-mau1').style.color = 'white'
+                document.getElementById('baoloi3').style.display = 'none'
+            }
+         }
+    </script>
+    <script>
+         function kiemTraLoiTabletvaMobile(){
+            var error = ""
+            var ok = ""
+            //Kiểm tra masv
+            var soDienThoaiMB = document.getElementById("soDienThoaiMB")
+            if (soDienThoaiMB.value == "") {   
+                error += "Số điện thoại còn trống.<br>"
+                document.getElementById("errormb").innerHTML = error
+            } else if (soDienThoaiMB.value.length < 10) {
+                error += "Số điện thoại không hợp lệ.<br>"
+                document.getElementById("errormb").innerHTML = error
+            } else {
+                soDienThoaiMB.className = "box0"
+                document.getElementById('errormb').style.display = "none";
+            }
+            var error1 = ""
+            var matKhauMB = document.getElementById('matKhauMB')
+            if(matKhauMB.value == ''){
+                
+                error1 += "Bạn chưa nhập mật khẩu.<br>"
+                document.getElementById('errormb1').innerHTML = error1
+            }else if(matKhauMB.value.length < 7){
+               
+                error1 += "Mật khẩu không được ít hơn 7 kí tự"
+                document.getElementById('errormb1').innerHTML = error1
+            }else{
+                document.getElementById('errormb1').style.display = "none"
+            }
+            var error2 = ""
+            var returnMKMB = document.getElementById('returnMKMB')
+            if(returnMKMB.value == ''){
+              
+                error2 += "Vui lòng nhập lại mật khẩu.<br>"
+                document.getElementById('errormb2').innerHTML = error2
+            }else if(returnMKMB.value.length < 7){
+                error2+= "Mật khẩu không được ít hơn 7 kí tự"
+                document.getElementById('errormb2').innerHTML = error2
+            }else{
+                document.getElementById('errormb2').style.display = "none"
+            }
+            count = 0
+            var arr_rName = document.getElementsByName("rdGioiTinh")
+            for (var i = 0; i < arr_rName.length; i++) {
+                if (arr_rName[i].checked == true) {
+                    count++
+                }
+            }
+            if (count == 0) {
+                document.getElementById('errormb3').innerHTML = 'Chọn giới tính'
+            } else {
+                document.getElementById('errormb3').style.display = 'none'
+            }
+         }
+    </script>
+</body>
+</html>

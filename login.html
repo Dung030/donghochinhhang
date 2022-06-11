@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="reponsiveLogin.css">
+    <link rel="icon" href="images/Group 1 (1).png">
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="dangnhap">
+            <div class="dangnhap-content"></div>
+            <div class="khung-dangnhap">
+                <ul class="list-dangnhap">
+                    <div class="btn-home"> <a class="btn-home" href="index.html"><img src="images/Group 1 (1).png" width="50px"
+                                class="hinhlogo" alt=""></a></div>
+                    <li class="tieude">
+                        <h5>Đăng Nhập</h5>
+                    </li>
+
+                    <li class="tk">
+                        <input class="btn-tk" type="text" name="" placeholder="Số điện thoại" id="soDienThoai">
+                        <div id="baoloi"></div>
+                    </li>
+                    <li class="mk">
+                        <input class="btn-mk" type="password" name="" placeholder="Mật khẩu" id="matKhau">
+                        <div id="baoloi1"></div>
+                    </li>
+                    <li class="btn-dangnhap">
+                        <input class="nut-dangnhap" type="button" value="Đăng nhập" onclick="kiemTraLoiPC()">
+                    </li>
+                    <li class="quenmatkhau">
+                        <a class="quenmk" href="#" class="quenmk-link">Quên mật khẩu ?</a>
+                        <a class="sms" href="#" class="dangnhap-sms">Đăng nhập với SMS ?</a>
+                    </li>
+                    <li class="hoac">
+                        <div class="gach"></div>
+                        <span class="gach-text">Hoặc</span>
+                        <div class="gach2 gach"></div>
+                    </li>
+                    <li class="fb">
+                        <a href="#"><i class="iconfb ti-facebook"></i></a>
+                        <a href="#"><i class="tw ti-twitter-alt "></i></a>
+                        <a href="#"><i class="gg ti-google"></i></a>
+                    </li>
+                    <li class="end">
+                        Bạn mới biết đến DNT?
+                        <a href="login-sub.html" class="link-ky">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-tablet">
+        <form>
+            <div class="dangnhap-tablet">
+                <div class="case1">
+                    <div class="case1-left">
+                        <span>
+                            <a href="index.html"> <i class="ti-arrow-left"></i></a>
+                        </span>
+                        <span>Đăng nhập</span>
+                    </div>
+                    <div class="case1-right">
+                        <a href="#">
+                            <p>Cần trợ giúp ?</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="case2">
+                    <img src="images/Group 1 (1).png" alt="">
+                </div>
+                <div class="case3">
+                    <div class="nhap-tk">
+                        <i class="ti-user"></i>
+                        <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập" id="soDienThoaiMB" autocomplete="off"><br>
+                        <div id="errorMB"></div>
+                    </div>
+                    <div class="nhapMK">
+                        <i class="ti-lock"></i>
+                        <input type="password" placeholder="Mật khẩu" id="matKhauMB">
+                        <div id="errorMB1"></div>
+                    </div>
+                   
+                    <input class="submit" type="button" onclick="kiemTraLoiTabletvaMB()" value="Đăng nhập"></input>
+                </div>
+                <div class="case4">
+                    <div class="case4-left">
+                        <a href="login-sub.html">
+                            <p>Đăng ký</p>
+                        </a>
+                    </div>
+                    <div class="case4-right">
+                        <a href="#">
+                            <p>Đăng nhập bằng SMS</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="case5">
+                    <div class="box-title">
+                        <span>hoặc</span>
+                    </div>
+                </div>
+                <div class="case6">
+                    <div class="facebook">
+                       <div class="icon-facebook"><i class="ti-facebook"></i></div>
+                       <div class="title-facebook"><p>Facebook</p></div>
+                    </div>
+                    <div class="google">
+                        <div class="icon-google"><i class="ti-google"></i></div>
+                        <div class="title-google"><p>Google</p></div>
+                    </div>
+                    <div class="twitter">
+                        <div class="icon-twitter"><i class="ti-twitter"></i></div>
+                        <div class="title-twitter"><p>Google</p></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function kiemTraLoiPC(){
+            var soDienThoai = document.getElementById('soDienThoai')
+            if(soDienThoai.value == ''){
+                document.getElementById('baoloi').innerHTML = 'Vui lòng nhập tài khoản'
+            }else if(soDienThoai.value.length < 10){
+                document.getElementById('baoloi').innerHTML = 'Tài khoản không hợp lệ'
+            }else{
+                document.getElementById('baoloi').style.display = 'none'
+            }
+            var matKhau = document.getElementById('matKhau')
+            if(matKhau.value == ''){
+                document.getElementById('baoloi1').innerHTML = 'Vui lòng nhập mật khẩu'
+            }else if(matKhau.value.length < 5){
+                document.getElementById('baoloi1').innerHTML = 'Mật khẩu không hợp lệ'
+            }else{
+                document.getElementById('baoloi1').style.display = 'none'
+            }
+        }
+        function kiemTraLoiTabletvaMB(){
+            var soDienThoai = document.getElementById('soDienThoaiMB')
+            if(soDienThoai.value == ''){
+                document.getElementById('errorMB').innerHTML = 'Vui lòng nhập tài khoản'
+            }else if(soDienThoai.value.length < 10){
+                document.getElementById('errorMB').innerHTML = 'Tài khoản không hợp lệ'
+            }else{
+                document.getElementById('errorMB').style.display = 'none'
+            }
+            var matKhau = document.getElementById('matKhauMB')
+            if(matKhau.value == ''){
+                document.getElementById('errorMB1').innerHTML = 'Vui lòng nhập mật khẩu'
+            }else if(matKhau.value.length < 10){
+                document.getElementById('errorMB1').innerHTML = 'Mật khẩu không hợp lệ'
+            }else{
+                document.getElementById('errorMB1').style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>

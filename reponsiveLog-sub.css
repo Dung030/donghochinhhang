@@ -1,0 +1,228 @@
+@media only screen and (max-width:780px){
+    
+    .login-sub{
+        display: none;
+    }
+    /* fix */
+    .main-tablet{
+        display: block;
+        font-family: 'Roboto Flex', sans-serif;
+        max-width: 680px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .case1{
+        line-height: 40px;
+        height: 40px;
+    }
+    .case1-left{
+        float: left;
+    }
+    .case1-left span a{
+        color: rgb(255, 174, 0);
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .case1-left span{
+        color: #3b3e3c;
+        font-size: 17px;
+    }
+    .case1-right{
+        float: right;
+    }
+    .case1-right a{
+        text-decoration: none;
+        color: rgb(65, 61, 61);
+    }
+    .case1-right a p{
+        margin: 0;
+    }
+    .case2 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    .case2 img{
+        transition: 0.5s;
+        margin-left: 310px;
+        width: 8%;
+    }
+    .case2 img:hover{
+        transition: 0.5s;
+        transform: scaleX(-2);
+        width: 8%;
+    }
+    .case3 input {
+        background-color: #fff;
+        outline: 0;
+        border: 0;
+        height: 30px;
+        font-size: 17px;
+        width: 80%;
+    }
+    
+    .case3 .nhap-tk,.nhapMK{
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px yellow solid;
+    }
+    .case3 .submit{
+        border: none;
+        line-height: 40px;
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+        font-weight: 500;
+        background-color: yellow;
+    }
+    .case3 .submit:hover{
+        transition: .5s;
+        background-color: rgb(229, 255, 0);
+    }
+    .case3-left{
+        color: rgb(85, 83, 83);
+        line-height: 40px;
+        float: left;
+        width: 50%;
+    } 
+    .case3-right{
+        line-height: 30px;
+        float: right;
+        width: 50%;
+        background: #ccc;
+        color: rgb(85, 83, 83);
+    }
+    .case3-right .gTinh{
+        width: 20px;
+      
+        height: 12px;
+    }
+    .case3-right .gTinh span{
+        padding-bottom: 10px;
+        color: #ffea00;
+    }
+    .case3 .ngay-sinh{
+        width: 30%;
+        color: rgb(91, 88, 88);
+    }
+    .case4{
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .case4-left{
+        float: left;
+    }
+    .case4-right{
+        float: right;
+    }
+    .case4-left a,.case4-right a{
+        text-decoration: none;
+        color:rgb(65, 61, 61); ;
+    }
+    .case4-left a:hover,.case4-right a:hover{
+        color: rgb(235, 235, 72);
+        transition: .5s;
+    }
+    .case5 .box-title {
+        max-width: 360px;
+        margin: 0 auto 40px;
+        color: #ffea00;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+    }
+    .case5 .box-title span {
+        padding: 0 15px;
+        background-color: #fff;
+        position: relative;
+        text-align: center;
+        z-index: 2;
+    }
+    .case5 .box-title::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .case6 .facebook,.google, .twitter {
+     width: 100%;
+     margin-top: 5px;
+     line-height: 30px;
+     height: 30px;
+     border: 1px solid #ccc;
+    }
+    .case6 .facebook .icon-facebook,.google .icon-google, .twitter .icon-twitter{
+        width: 30%;
+        float: left;
+    }
+    .case6 .facebook .icon-facebook .ti-facebook{
+        color: #fff;
+        background: rgb(0, 81, 255);
+        line-height: 30px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 3px;
+        margin: 5px;
+    }
+    .case6 .facebook .title-facebook, .google .title-google, .twitter .title-twitter{
+        width: 60%;
+        float: right;
+    }
+    .case6 .facebook .title-facebook p, .google .title-google p, .twitter .title-twitter p{
+        margin: 0;
+        padding-left: 34px;
+    }
+    .case6 .google .icon-google .ti-google{
+       color: red;
+       line-height: 30px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 3px;
+        margin: 5px;
+    }
+    .case6 .twitter .icon-twitter .ti-twitter{
+        color: #fff;
+        background: rgb(0, 187, 255);
+        line-height: 30px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 3px;
+        margin: 5px;
+    }
+    #errormb,#errormb1,#errormb2{
+        font-size: 12px;
+        color: rgb(255, 60, 0);
+    }
+    #errormb3{
+        font-size: 12px;
+        color: rgb(255, 60, 0);
+        padding-left: 11px;
+       
+    }
+    }
+@media only screen and (max-width:420px){
+    .case2 img{
+        margin-left: 175px;
+    }
+    .case6 .facebook .title-facebook p, .google .title-google p, .twitter .title-twitter p {
+        padding-left: 8px;
+    }
+    .case3 .ngay-sinh {
+        width: 53%;
+        color: rgb(91, 88, 88);
+        font-size: 14px;
+}
+}   
